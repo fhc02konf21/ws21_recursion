@@ -9,8 +9,12 @@ public class GGT {
      * @return größter gemeinsamer teiler
      */
     public int ggtIterative(int a, int b) {
-        return 0;
-
+        while (b != 0) {
+            int rest = a % b; // berechne den restwert der division
+            a = b;  // ersetze a durch b
+            b = rest; // ersetze b durch den restwert
+        }
+        return a; // retourniere a wenn b == 0
     }
 
     /**
@@ -20,6 +24,11 @@ public class GGT {
      * @return größter gemeinsamer teiler
      */
     public int ggtRecursive(int a, int b) {
-        return 0;
+        // if b gleich 0, dann retourniere a
+        // ansonsten ersetze a durch b und b durch den restwert der division (a/b)
+        if (b == 0) {
+            return a;
+        }
+        return ggtRecursive(b, a % b);
     }
 }
