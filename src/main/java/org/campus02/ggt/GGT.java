@@ -10,6 +10,7 @@ public class GGT {
      */
     public int ggtIterative(int a, int b) {
         return 0;
+
     }
 
     /**
