@@ -44,7 +44,11 @@ public class Sum {
      * @return Summe aller enthaltenen Zahlen
      */
     public int iterativeSum(ArrayList<Integer> numbers) {
-        return 0;
+        int sum = 0;
+        for (Integer number : numbers) {
+            sum += number;
+        }
+        return sum;
     }
 
     /**
