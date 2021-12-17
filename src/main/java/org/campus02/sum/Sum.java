@@ -57,7 +57,12 @@ public class Sum {
      * @return Summe aller enthaltenen Zahlen
      */
     public int recursiveSum(ArrayList<Integer> numbers) {
-        return 0;
+        // abbruchbestimmung
+        if (numbers.size() == 0) {
+            return 0;
+        }
+        Integer n = numbers.remove(0); // nimmt das Element an der Stelle (index) 0 und liefert es zurück => gleichzeit entfernt es dieses Element aus der Liste
+        return n + recursiveSum(numbers);
     }
 
 }
