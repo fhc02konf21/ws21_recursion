@@ -6,7 +6,16 @@ public class PrintNumbers {
         fromNToZero(5);
     }
 
+    /**
+     * iterativ
+     * @param n
+     */
     public static void fromNToZero(int n) {
-        System.out.println("n = " + n);
+        while (n >= 0) {
+            System.out.println("n = " + n);
+            n --;
+        }
     }
+
+
 }
