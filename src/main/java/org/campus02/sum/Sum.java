@@ -30,7 +30,12 @@ public class Sum {
             return n;
         }
         // selbst wieder aufrufen
-        return n + sumUpRecursive(n - 1);
+        return n + sumUpRecursive(n - 1); // annahme n = 3 => 3 + 2 + 1 + 0
+        // 3 + sumUpRecursive(2)
+        // 3 + 2 + sumUpRecursive(1)
+        // 3 + 2 + 1 + sumUpRecursive(0)
+        // 3 + 2 + 1 + 0
+        // 6
     }
 
     /**
