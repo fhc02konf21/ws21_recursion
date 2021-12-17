@@ -19,6 +19,7 @@ public class PrintNumbers {
         }
     }
 
+    // von N hinunter bis 0 die Ausgabe
     public static void fromNToZeroRecursiv(int n) {
         // abbruchsbestimmung
         if (n < 0) {
@@ -28,6 +29,7 @@ public class PrintNumbers {
         fromNToZeroRecursiv(n - 1);
     }
 
+    // von 0 bis N hinauf die Ausgabe
     public static void fromZeroToNRecursiv(int n) {
         if (n < 0) {
             return;
